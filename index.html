@@ -4,9 +4,64 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" media="screen" href="https://fontlibrary.org//face/metropolitano" type="text/css"/>
     <title>Document</title>
 </head>
 <body>
-    <h1>heelo</h1>
+    <div class="container">
+        <div class="left">
+            left
+            <div class="logo">
+                <img src="" alt="The Odin Project logo">
+                Odin
+            </div>
+            <p></p>
+        </div>
+        <div class="right">
+            <div class="header">
+                <p class="headerText1">
+                This is not real online service! You know yo need something like this in your life to help you realize your deepest dreams.
+                Sign up <em>now</em> to get started.
+                </p>
+                <p class="headerText2">You <em>know</em> you want to.</p>
+            </div>
+            <div class="formDiv">
+                <form class="form" method="get" action="">
+                    <fieldset class="formFieldset">
+                        <legend class="formLegend">Let's do this!</legend>
+                        
+                            <div class="inputRow">
+                                <label class="formLabel" for="first_name"><p class="formLabelText">FIRST NAME</p>
+                                    <input class="formInput" name="first_name" type="text">
+                                </label>
+                                <label class="formLabel" for="last_name"><p class="formLabelText">LAST NAME</p>
+                                    <input class="formInput" name="last_name" type="text">
+                                </label>
+                            </div>
+                            <div class="inputRow">
+                                <label class="formLabel" for="email"><p class="formLabelText"> EMAIL</p>
+                                    <input class="formInput" name="email" type="email">
+                                </label>
+                                <label class="formLabel" for="phone_number"><p class="formLabelText">PHONE NUMBER</p>
+                                    <input class="formInput" type="number" name="phone_number">
+                                </label>
+                            </div>
+                            <div class="inputRow">
+                                <label class="formLabel" for="password"><p class="formLabelText">PASSWORD</p>
+                                    <input class="formInput" name="password" type="password">
+                                </label>
+                                <label class="formLabel" for="confirm_password"><p class="formLabelText">CONFIRM PASSWORD</p>
+                                    <input class="formInput" name="confrim_password" type="password">
+                                </label>
+                            </div>    
+                    </fieldset>
+                    </form>
+            </div>
+            <div class="footer">
+                <button class="footerButton">Create Account</button>
+                <p class="footerText">Already have an account? <a class="footerTextLink" href="">Log in</a></p>
+            </div>
+        </div>
+    </div>
 </body>
 </html>

@@ -40,3 +40,178 @@ h1, h2, h3, h4, h5, h6 {
 #root, #__next {
   isolation: isolate;
 }
+/* Josh Cameau css reset ^^^ */
+
+
+
+body {
+    width: 100%;
+    height: 100vh;
+     font-family: 'NewTelegraphRegular', Georgia, 'Times New Roman', serif;
+}
+
+.container {
+ display: flex;
+ height: 100%
+}
+
+.left {
+    background-image: url("src/halie-west-25xggax4bSA-unsplash.jpg");
+     background-repeat: no-repeat;
+    background-size: cover;
+    width: 40%;
+}
+
+.logo {
+    background-color: rgba(0,0,0,30%);
+    color: rgba(255,255,255);
+}
+
+.header{
+    font-size: 2rem;
+    
+}
+.headerText1 {
+    margin-bottom: 40px;
+    font-weight:600;
+}
+
+.headerText2 {
+    font-weight: 600;
+}
+
+
+.right {
+    background-color: rgb(240,240,240);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+  
+}
+
+.header,.form,.footer {
+    margin-left: 60px;
+    width: 60%;
+}
+
+
+
+.formDiv {
+    background-color: rgb(255, 255, 255);
+    height: 40%;
+    display: flex;
+    align-items: center;
+    -webkit-box-shadow: 3px 15px 11px -11px rgba(167, 168, 188, 1);
+  -moz-box-shadow: 3px 15px 11px -11px rgba(167, 168, 188, 1);
+  box-shadow: 3px 15px 11px -11px rgba(167, 168, 188, 1);
+    
+}
+
+
+.formFieldset {
+  display: flex;
+  border: none;
+  flex-direction: column;
+  flex-wrap: nowrap;
+
+}
+
+.formLegend {
+  font-size:2rem;
+  margin-bottom: 30px;
+}
+
+label, input {
+  display: block;
+  padding: 5px;
+  margin: 5px;
+}
+
+.formInput {
+  border: 1px solid rgb(220,220,220);
+  border-radius: 4px;
+  max-width: 500px;
+  width: 100%;
+  margin-right: 15px;
+}
+
+
+
+.inputRow {
+  display: flex;
+  gap: 20px;
+  margin-bottom: 20px;
+  flex-wrap: nowrap;
+
+}
+
+.inputRow> .formLabel{
+  flex: 1 1 45%;
+  min-width: 200px;
+}
+
+.formLabel {
+  font-size: small;
+   max-width: 500px;
+  width: 100%;
+  font-weight: 500;
+  color: rgb(65, 64, 64);
+  margin-left: 10px;
+}
+
+.formLabelText {
+  margin-left: 10px;
+}
+
+@media screen and (max-width: 975px) {
+  .formInput {
+  border: 1px solid rgb(220,220,220);
+  border-radius: 4px;
+  max-width: 100px;
+   max-width: 250px;
+  width: 100%;
+
+}
+.inputRow {
+  display: flex;
+  flex-wrap: nowrap;
+}
+
+.inputRow> .formLabel{
+  flex: 1 1 45%;
+  min-width: 20px;
+}
+
+}
+
+
+.footerButton {
+  padding: 10px;
+  padding-left: 50px;
+  padding-right: 50px;
+  background-color: #596D48;
+  border: none;
+  color: rgb(255,255,255);
+  font-weight: 600;
+  border-radius: 5px;
+  margin-bottom: 15px;
+
+}
+
+.footer { 
+  margin-top: -60px;
+  margin-bottom: 40px;
+}
+
+
+
+.footerTextLink:link {
+  color: #596D48;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.footerTextLink:visited {
+  color: #596D48;
+}
+
