@@ -55,16 +55,51 @@ body {
  height: 100%
 }
 
+@font-face {
+    font-family: "Norse-Bold";
+    src: url("src/Norse-Bold.otf");
+}
+
+
+
+
+/* LEFT SIDE  */
 .left {
+    display: flex;
     background-image: url("src/halie-west-25xggax4bSA-unsplash.jpg");
      background-repeat: no-repeat;
     background-size: cover;
     width: 40%;
+    flex-direction: column;
+    justify-content: space-between;
+    color: rgb(255,255,255);
+    align-items: center;
+}
+
+.logoDiv {
+    display: flex;
+    width: 100%;
+    margin-top: 100px;
+    background-color: rgba(0,0,0,30%);
+    color: rgba(255,255,255);
+    justify-content: center;
+    align-items: center;
 }
 
 .logo {
-    background-color: rgba(0,0,0,30%);
-    color: rgba(255,255,255);
+  width: 25%;
+}
+.logoText {
+  font-family: "Norse-Bold";
+  font-size: 10rem;
+}
+
+.logoDivLink:link {
+  color: rgba(255,255,255);
+}
+
+.logoDivLink:visited {
+  color: rgba(255,255,255);
 }
 
 .header{
@@ -81,6 +116,11 @@ body {
 }
 
 
+
+
+
+
+/* RIGHT SIDE  */
 .right {
     background-color: rgb(240,240,240);
     display: flex;
@@ -96,10 +136,14 @@ body {
 
 
 
+
+
+/*  FORM DIV */
 .formDiv {
     background-color: rgb(255, 255, 255);
-    height: 40%;
+    height: 50%;
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
     -webkit-box-shadow: 3px 15px 11px -11px rgba(167, 168, 188, 1);
   -moz-box-shadow: 3px 15px 11px -11px rgba(167, 168, 188, 1);
@@ -128,11 +172,24 @@ label, input {
 }
 
 .formInput {
-  border: 1px solid rgb(220,220,220);
+  border: 1px solid #E5E7EB;
   border-radius: 4px;
   max-width: 500px;
   width: 100%;
   margin-right: 15px;
+}
+
+
+
+.formInput:invalid:focus {
+  border:2px solid red;
+}
+
+
+.formInput:focus {
+  outline: none;
+  border:2px solid rgb(160, 142, 225);
+   box-shadow: 3px 15px 11px -11px rgba(167, 168, 188, 1);
 }
 
 
@@ -185,6 +242,14 @@ label, input {
 }
 
 
+
+
+
+
+
+
+/* FOOTER */
+
 .footerButton {
   padding: 10px;
   padding-left: 50px;
@@ -199,7 +264,7 @@ label, input {
 }
 
 .footer { 
-  margin-top: -60px;
+  
   margin-bottom: 40px;
 }
 

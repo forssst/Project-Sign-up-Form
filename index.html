@@ -10,12 +10,11 @@
 <body>
     <div class="container">
         <div class="left">
-            left
-            <div class="logo">
-                <img src="" alt="The Odin Project logo">
-                Odin
+            <div class="logoDiv">
+                <img class="logo"  src="src/odin-lined.png" alt="The Odin Project logo">
+                <h1 class="logoText">Odin</h1>
             </div>
-            <p></p>
+            <p class="logoDivText">Photo by <a class="logoDivLink" href="">Halie West</a> on <a class="logoDivLink" href="">Unsplash</a> </p>
         </div>
         <div class="right">
             <div class="header">
@@ -32,26 +31,26 @@
                         
                             <div class="inputRow">
                                 <label class="formLabel" for="first_name"><p class="formLabelText">FIRST NAME</p>
-                                    <input class="formInput" name="first_name" type="text">
+                                    <input class="formInput" name="first_name" required type="text">
                                 </label>
                                 <label class="formLabel" for="last_name"><p class="formLabelText">LAST NAME</p>
-                                    <input class="formInput" name="last_name" type="text">
+                                    <input class="formInput" name="last_name" required type="text">
                                 </label>
                             </div>
                             <div class="inputRow">
                                 <label class="formLabel" for="email"><p class="formLabelText"> EMAIL</p>
-                                    <input class="formInput" name="email" type="email">
+                                    <input class="formInput" name="email" required type="email">
                                 </label>
                                 <label class="formLabel" for="phone_number"><p class="formLabelText">PHONE NUMBER</p>
-                                    <input class="formInput" type="number" name="phone_number">
+                                    <input class="formInput" type="tel" required pattern="\+\d{1,4}-\d{3}-\d{3}-\d{3}" placeholder="+42-245-222-345" name="phone_number">
                                 </label>
                             </div>
                             <div class="inputRow">
                                 <label class="formLabel" for="password"><p class="formLabelText">PASSWORD</p>
-                                    <input class="formInput" name="password" type="password">
+                                    <input class="formInput" name="password" required type="password">
                                 </label>
                                 <label class="formLabel" for="confirm_password"><p class="formLabelText">CONFIRM PASSWORD</p>
-                                    <input class="formInput" name="confrim_password" type="password">
+                                    <input class="formInput" name="confrim_password" required type="password">
                                 </label>
                             </div>    
                     </fieldset>
